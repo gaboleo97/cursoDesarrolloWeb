@@ -1,0 +1,308 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+/* logo*/
+.header__logo{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    margin-left: 4rem;
+}
+/* fin logo*/
+
+/* estilos del menu*/
+.header__menuprincipal{
+
+} 
+
+.header__nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #3F4B5B;
+    text-align: center;
+}
+.header__ul  {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    list-style-type: none;
+    overflow: hidden;
+    justify-content: center;
+    background-color:#3F4B5B;
+  }
+  
+.header__li {    
+    flex: 1 1;
+    margin-top: 20px;   
+     
+}
+  
+.header__li > a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    text-decoration: none;
+}
+  
+.header__li > a:hover:not(.active) {
+    background-color: #000;
+}
+  
+.header__menuprincipal .active {
+    background-color: #ffffff;
+}
+/* fin stilos del menu*/
+/* estilos del menu footer*/
+.footer__menu{
+    background-color:#3F4B5B ;
+}
+.footer__nav{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: start;
+}
+.footer__ul  {
+    display: flex;
+    flex-wrap: nowrap;
+    list-style-type: none;
+    overflow: hidden;
+    background-color:#3F4B5B;
+  }
+  
+.footer__li {
+     float: left;
+}
+  
+.footer__li > a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+.footer__li > a:hover:not(.active) {
+    background-color: #000;
+}
+  
+.footer .active {
+    background-color: #ffffff;
+}
+/* fin stilos del menu footer*/
+/* estilos del menu redes sociales*/
+.social {
+	position: fixed; /* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla*/
+	left: 0; /* Establecemos la barra en la izquierda */
+	top: 200px; /* Bajamos la barra 200px de arriba a abajo */
+	z-index: 2000; /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
+}
+ 
+.social ul {
+	list-style: none;
+    padding-left: 0.5rem;
+    overflow: hidden;
+    background-color:#3F4B5B
+}
+
+.social li{
+    float: left;
+}
+
+ 
+.social ul li a {
+	display: inline-block;
+	color:#fff;
+	background: #000;
+	padding: 10px 15px;
+	text-decoration: none;
+	-webkit-transition:all 500ms ease;
+	-o-transition:all 500ms ease;
+	transition:all 500ms ease; /* Establecemos una transición a todas las propiedades */
+}
+ 
+.social ul li .icon-facebook {background:#3b5998;} /* Establecemos los colores de cada red social, aprovechando su class */
+.social ul li .icon-twitter {background: #0079a8;}
+.social ul li .icon-instagram {background: #383435;}
+.social ul li .icon-whatsapp {background: #00BFA5;}
+.social ul li .icon-mail {background: #C5221F;}
+
+.social img{
+    width: 1rem;
+    height: 1rem;
+}
+ 
+.social ul li a:hover {
+	background: rgba(0, 0, 0, 0.411); /* Cambiamos el fondo cuando el usuario pase el mouse */
+	padding: 10px 30px; /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
+}
+/* fin stilos del menu redes sociales*/
+
+/* buscador*/
+.buscador{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+.buscador__titulo{
+    
+}
+.buscador__barra{
+    width: 50%;
+}
+
+/* fin buscador*/
+
+/* Banners*/
+.banner{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.banner--1 , .banner--2{    
+    flex: 1 1;
+}
+.banner__img--1, .banner__img--2{
+    width: 100%;
+    padding: 0.4rem;
+    
+}
+   
+
+/* fin Banners*/
+/* contactanos*/
+.contacto{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+    border: 2px solid black;
+    margin: 10px 10px;    
+    background-color: rgba(0, 0, 0, 0.5);    
+    background-image: url("../assets/frutas5.jpg");
+    
+}
+.contacto__titulo{
+    text-align: center;
+
+}
+.contacto__datos{
+    width: 25rem;
+    font-size: 1rem;
+    color: #fff;
+}
+.contacto__mapa{
+    
+
+}
+.contacto__formulario{
+    color: #fff;
+}
+/* fin contactanos*/
+/* footer*/
+footer hr{
+    height: 4px !important;    
+}
+/* fin footer*/
+/* multimedia*/
+
+.multimedia{
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+.multimedia__tituloprincipal{
+    text-align: center;
+}
+.multimedia__contenedor{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.multimedia__img{
+    padding: 10px 10px;
+    height: 200px;
+    width: 100%;
+}
+.multimedia__titulo{
+    text-align: center;
+}
+/* fin multimedia*/
+/* nosotros*/
+.nosotros{
+    margin-left: 4rem;
+    margin-right: 4rem;
+    text-align: center;
+}
+/* fin nosotros*/
+/*  productos*/
+.main__productos--titulo{
+    margin-left: 4rem;
+    margin-right: 4rem;
+    text-align: center;
+}
+.main__productos{
+    
+    display: grid;
+    border: 1px solid #000;     
+    align-items: center;
+    justify-items: center;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+.main__productos--img{
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+/* fin productos*/
+/* contacto*/
+
+.contactanos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+    border: 2px solid black;
+    margin: 10px 10px;    
+    background-color: rgba(0, 0, 0, 0.5);    
+    background-image: url("../assets/21.jpeg");
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+}
+    
+
+.contactanos__titulo{
+    text-align: center;
+
+}
+.contactanos__datos{
+    width: 25rem;
+    font-size: 1rem;
+    color: red;
+    font-weight: bold;
+}
+.contactanos__mapa{
+    
+
+}
+.contactanos__formulario{
+    color: red;
+    font-weight: bold;
+}
+/* fin contactanos*/
