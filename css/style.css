@@ -140,7 +140,11 @@
 	padding: 10px 30px; /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
 }
 /* fin stilos del menu redes sociales*/
-
+/* carousel principal*/
+.carouselPrincipal__item--img{
+    height: 500px;
+}
+/* fin carousel principal*/
 /* buscador*/
 .buscador{
     display: flex;
@@ -306,3 +310,107 @@ object-fit: cover;
     font-weight: bold;
 }
 /* fin contactanos*/
+
+@media screen and (min-width: 768px){
+/* carousel principal*/
+.carouselPrincipal__item--img{
+    height: 300px;
+}
+/* fin carousel principal*/
+
+/* contacto*/
+.contacto{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-items: center;
+    border: 2px solid black;
+    margin: 10px 10px;    
+    background-color: rgba(0, 0, 0, 0.5);    
+    background-image: url("../assets/frutas5.jpg");
+    
+}
+.contacto__titulo{
+    text-align: center;
+
+}
+.contacto__datos{
+    width: 25rem;
+    font-size: 1rem;
+    color: #fff;
+}
+.contacto__mapa{
+    width: 500px;
+    height: 200px; 
+    border: 0;
+
+}
+/* fin contacto*/
+/* contactanos*/
+.contactanos{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-items: center;
+    border: 2px solid black;
+    margin: 10px 10px;    
+    background-color: rgba(0, 0, 0, 0.5);    
+    background-image: url("../assets/frutas5.jpg");
+    
+}
+.contactanos__titulo{
+    text-align: center;
+
+}
+.contactanos__datos{
+    width: 25rem;
+    font-size: 1rem;
+    color: #fff;
+}
+.contactanos__mapa{
+    width: 500px;
+    height: 200px; 
+    border: 0;
+
+}
+/* fin contactanos*/
+
+
+}
+@media screen and (min-width: 1024px){
+    /* carousel principal*/
+    .carouselPrincipal__item--img{
+        height: 500px;
+    }
+    /* fin carousel principal*/
+
+    /* contacto*/
+    .contacto{
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+    }
+    .contacto__mapa{
+    width: 350px;
+    height: 200px; 
+    border: 0;
+    }
+/* fin contacto*/
+    /* contactanos*/
+    .contactanos{
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-around;
+        }
+        .contactanos__mapa{
+        width: 350px;
+        height: 200px; 
+        border: 0;
+        }
+    /* fin contactanos*/
+
+    }
