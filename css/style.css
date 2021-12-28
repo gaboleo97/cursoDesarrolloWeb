@@ -1,6 +1,10 @@
 *{
     font-family: 'Roboto', sans-serif;
 }
+body{
+    background: rgb(228,247,10);
+    background: linear-gradient(180deg, rgba(228,247,10,1) 0%, rgba(10,117,232,0.8925945378151261) 35%, rgba(255,0,0,1) 100%);
+}
 /* logo*/
 .header__logo{
     margin-top: 2rem;
