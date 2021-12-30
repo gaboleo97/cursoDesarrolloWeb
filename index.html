@@ -35,9 +35,9 @@
     </header>
     <main>
       <!-- Carousel Principal-->
-      <section class="carouselPrincipal">
-        <div>
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <section class="container-fluid carouselPrincipal">
+        <div class="row justify-content-center">
+            <div id="carouselExampleIndicators" class="col-12 carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -68,19 +68,19 @@
       <!-- Fin Carousel Principal-->
         <br>
         <!-- Buscador-->
-      <section>
-        <div class="buscador">
-            <label  class="buscador__titulo" for="buscar"><h2>Buscar</h2></label>
+      <section class="container"> 
+        <div class="row justify-content-center">
+            <div class="col-1 align-self-center" for="buscar"><h2>Buscar</h2></div>
             <br>
-            <input class="buscador__barra" type="search" name="buscar" id="buscar" placeholder="Buscar">
+            <input class="col-12" type="search" name="buscar" id="buscar" placeholder="Buscar">
         </div>
       </section>
       <!-- Fin Buscador-->
         <br>
         <!-- Carousel Productos 1-->
-        <section>
-          <div>
-              <div id="carousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <section class="container-fluid">
+          <div class="row justify-content-center">
+              <div id="carousel" class=" col-12 carousel carousel-dark slide" data-bs-ride="carousel">
                   <div class="carousel-inner">
                     <div class="carousel-item active">
                       <div class="row">
@@ -167,24 +167,26 @@
         </section>
         <!-- Fin Carousel Productos 1-->
         <!-- Banners-->
-        <Section class="banner">
-          <div class="banner--1">
-            <picture class="banner__img"">
-              <img class="banner__img--1" src="./assets/banner0.png" alt="Banner 1">
-            </picture>
+        <Section class="container-fluid banner">
+          <div class="row justify-content-center">
+            <div class="banner--1">
+              <picture class="banner__img"">
+                <img class="banner__img--1" src="./assets/banner0.png" alt="Banner 1">
+              </picture>
+            </div>
+            <div class="banner--2">
+              <picture class="banner__img"> 
+                <img class="banner__img--2" src="./assets/banner1.png" alt="Banner 2">
+              </picture>
+            </div>          
           </div>
-          <div class="banner--2">
-            <picture class="banner__img"> 
-              <img class="banner__img--2" src="./assets/banner1.png" alt="Banner 2">
-            </picture>
-          </div>          
         </Section>
         <!-- Fin Banners-->
         <br>
         <!-- Carousel Productos 2-->
-        <section>
-          <div>
-              <div id="carousel2" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <section class="container-fluid">
+          <div class="row justify-content-center">
+              <div id="carousel2" class="col-12 carousel carousel-dark slide" data-bs-ride="carousel">
                   <div class="carousel-inner">
                     <div class="carousel-item active">
                       <div class="row">
@@ -271,56 +273,61 @@
         </section>
         <!-- Fin Carousel Productos 2-->
         <!-- Contactanos-->
-        <h2 class="contacto__titulo"> Contactanos </h2>
-        <section class="contacto">                                        
-            <div class="contacto__datos">                  
-              </h3>Datos de la empresa</h3>
-                <p>Nombre: Propio Mercado Almacen</p>
-                                
-                <p>Direccion: Av. San Martin 2837, buenos aires</p>
-                
-                <p>Horario: 9:00 am - 20:00 pm</p>                
-                <p>email: xxxx@ejemplo.com</p>                
-                <iframe class="contacto__mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0722187823085!2d-58.468087584801204!3d-34.6023352804599!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9ffcd2a615b%3A0xd8b90591108db340!2sAv.%20San%20Mart%C3%ADn%202837%2C%20C1416%20CSD%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1638418747226!5m2!1ses-419!2sar"  allowfullscreen="" loading="lazy"></iframe>  
-                            
-            </div>
+        <div class="container-fluid">
+          <div class="row justify-content-center">
 
-            <div class="contacto__formulario">
-              <form action="#" method="get">
-                <fieldset>
-                  <legend> Informacion </legend>
-                  <label for="nombre">Nombre</label>
-                  <input type="text" name="nombre" id="nombre" value="" placeholder="Pedro">
-                  <label for="apellido">Apellido</label>
-                  <input type="text" name="apellido" id="apellido" value="" placeholder="Perez">
-                  <br>
-                  <label for="dni">DNI</label>
-                  <input type="number" name="dni" id="dni" value="" placeholder="99999999">
-                  <label for="telefono">Telefono</label>
-                  <input type="tel" name="telefono" id="telefono" value="" placeholder="011 11111111">
-                  <br>
-                  <label for="email">Correo</label>
-                  <input type="email" name="email" id="email" value="" placeholder="xxxx@ejemplo.com">
-                  <label for="direccion">Direccion</label>
-                  <input type="text" name="direccion" id="direccion" value="" placeholder="calle xxxx xx">
-                  <br>
-                  <label for="horario">Horario de Retiro</label>
-                  <select name="horario" id="horario">
-                    <option value="9:00-12:00">9:00 am - 12:00 pm</option>
-                    <option value="13:00-20:00">13:00pm - 20:00 pm</option>                      
-                  </select>
-                  <br>
-                  <label for="comentario">Comentarios</label>
-                  <br>
-                    <textarea name="comentario" id="comentario" cols="60" rows="5" placeholder="Esto es un comentario"></textarea>
-                  <br>
-                  <input type="submit" value="Enviar">
-                  <input type="reset" value="Limpiar">
-                </fieldset>
-              </form>
-            </div>                   
-        </section>
-        <!-- Fin Contactanos-->
+          </div>
+          <h2 class="col-12 contacto__titulo"> Contactanos </h2>
+          <section class="contacto">                                        
+              <div class="contacto__datos">                  
+                </h3>Datos de la empresa</h3>
+                  <p>Nombre: Propio Mercado Almacen</p>
+                                  
+                  <p>Direccion: Av. San Martin 2837, buenos aires</p>
+                  
+                  <p>Horario: 9:00 am - 20:00 pm</p>                
+                  <p>email: xxxx@ejemplo.com</p>                
+                  <iframe class="contacto__mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0722187823085!2d-58.468087584801204!3d-34.6023352804599!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9ffcd2a615b%3A0xd8b90591108db340!2sAv.%20San%20Mart%C3%ADn%202837%2C%20C1416%20CSD%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1638418747226!5m2!1ses-419!2sar"  allowfullscreen="" loading="lazy"></iframe>  
+                              
+              </div>
+  
+              <div class="contacto__formulario">
+                <form action="#" method="get">
+                  <fieldset>
+                    <legend> Informacion </legend>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" value="" placeholder="Pedro">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" id="apellido" value="" placeholder="Perez">
+                    <br>
+                    <label for="dni">DNI</label>
+                    <input type="number" name="dni" id="dni" value="" placeholder="99999999">
+                    <label for="telefono">Telefono</label>
+                    <input type="tel" name="telefono" id="telefono" value="" placeholder="011 11111111">
+                    <br>
+                    <label for="email">Correo</label>
+                    <input type="email" name="email" id="email" value="" placeholder="xxxx@ejemplo.com">
+                    <label for="direccion">Direccion</label>
+                    <input type="text" name="direccion" id="direccion" value="" placeholder="calle xxxx xx">
+                    <br>
+                    <label for="horario">Horario de Retiro</label>
+                    <select name="horario" id="horario">
+                      <option value="9:00-12:00">9:00 am - 12:00 pm</option>
+                      <option value="13:00-20:00">13:00pm - 20:00 pm</option>                      
+                    </select>
+                    <br>
+                    <label for="comentario">Comentarios</label>
+                    <br>
+                      <textarea name="comentario" id="comentario" cols="60" rows="5" placeholder="Esto es un comentario"></textarea>
+                    <br>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpiar">
+                  </fieldset>
+                </form>
+              </div>                   
+          </section>
+          <!-- Fin Contactanos-->
+        </div>
     </main>  
     <footer>
       <hr>
