@@ -1,0 +1,149 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background: rgb(228,247,10);
+    background: linear-gradient(180deg, rgba(228,247,10,1) 0%, rgba(10,117,232,0.8925945378151261) 35%, rgba(255,0,0,1) 100%);
+}
+/* logo*/
+.header__logo{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    margin-left: 4rem;
+}
+/* fin logo*/
+/* estilos del menu*/
+.header__menuprincipal{
+
+} 
+
+.header__nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #3F4B5B;
+    text-align: center;
+}
+.header__ul  {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    list-style-type: none;
+    overflow: hidden;
+    justify-content: center;
+    background-color:#3F4B5B;
+  }
+  
+.header__li {    
+    color:#FFF;
+    flex: 1 1;
+    margin-top: 20px;   
+     
+}
+  
+.header__li > a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    text-decoration: none;
+}
+  
+.header__li > a:hover:not(.active) {
+    background-color: #000;
+}
+  
+.header__menuprincipal .active {
+    background-color: #ffffff;
+}
+/* fin stilos del menu*/
+/* estilos del menu footer*/
+.footer__menu{
+    background-color:#3F4B5B ;
+}
+.footer__nav{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: start;
+}
+.footer__ul  {
+    display: flex;
+    flex-wrap: nowrap;
+    list-style-type: none;
+    overflow: hidden;
+    background-color:#3F4B5B;
+  }
+  
+.footer__li {
+     float: left;
+}
+  
+.footer__li > a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+.footer__li > a:hover:not(.active) {
+    background-color: #000;
+}
+  
+.footer .active {
+    background-color: #ffffff;
+}
+/* fin stilos del menu footer*/
+/* estilos del menu redes sociales*/
+.social {
+	position: fixed; /* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla*/
+	left: 0; /* Establecemos la barra en la izquierda */
+	top: 200px; /* Bajamos la barra 200px de arriba a abajo */
+	z-index: 2000; /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
+}
+.carouselPrincipal__item--img{
+    height: 500px;
+}
+ 
+.social ul {
+	list-style: none;
+    padding-left: 0.5rem;
+    overflow: hidden;
+    background-color:#3F4B5B
+}
+
+.social li{
+    float: left;
+}
+
+ 
+.social ul li a {
+	display: inline-block;
+	color:#fff;
+	background: #000;
+	padding: 10px 15px;
+	text-decoration: none;
+	-webkit-transition:all 500ms ease;
+	-o-transition:all 500ms ease;
+	transition:all 500ms ease; /* Establecemos una transición a todas las propiedades */
+}
+ 
+.social ul li .icon-facebook {background:#3b5998;} /* Establecemos los colores de cada red social, aprovechando su class */
+.social ul li .icon-twitter {background: #0079a8;}
+.social ul li .icon-instagram {background: #383435;}
+.social ul li .icon-whatsapp {background: #00BFA5;}
+.social ul li .icon-mail {background: #C5221F;}
+
+.social img{
+    width: 1rem;
+    height: 1rem;
+}
+ 
+.social ul li a:hover {
+	background: rgba(0, 0, 0, 0.411); /* Cambiamos el fondo cuando el usuario pase el mouse */
+	padding: 10px 30px; /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
+}
+/* fin stilos del menu redes sociales*/
