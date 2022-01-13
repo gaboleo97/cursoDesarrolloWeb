@@ -16,8 +16,6 @@ body {
   margin-left: 4rem;
 }
 
-/* fin logo*/
-/* estilos del menu*/
 .header__nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -77,6 +75,8 @@ body {
   background-color: #ffffff;
 }
 
+/* fin logo*/
+/* estilos del menu*/
 /* fin stilos del menu*/
 /* estilos del menu footer*/
 .footer__menu {
@@ -128,7 +128,7 @@ body {
   background-color: #000;
 }
 
-.footer .active {
+.footer__ .footer .active {
   background-color: #ffffff;
 }
 
@@ -143,10 +143,7 @@ body {
   /* Bajamos la barra 200px de arriba a abajo */
   z-index: 2000;
   /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
-}
-
-.carouselPrincipal__item--img {
-  height: 500px;
+  /* Establecemos los colores de cada red social, aprovechando su class */
 }
 
 .social ul {
@@ -175,7 +172,6 @@ body {
   background: #3b5998;
 }
 
-/* Establecemos los colores de cada red social, aprovechando su class */
 .social ul li .icon-twitter {
   background: #0079a8;
 }
@@ -205,4 +201,7 @@ body {
 }
 
 /* fin stilos del menu redes sociales*/
+.carouselPrincipal__item--img {
+  height: 500px;
+}
 /*# sourceMappingURL=main.css.map */
