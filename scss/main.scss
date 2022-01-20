@@ -105,7 +105,13 @@ body{
 }
 /* fin stilos del menu footer*/
 /* estilos del menu redes sociales*/
-
+$social:(
+facebook:#3b5998,
+twitter:#0079a8,
+instagram:#383435,
+whatsapp:#00BFA5,
+mail:#C5221F
+);
 .social {
 	position: fixed; /* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla*/
 	left: 0; /* Establecemos la barra en la izquierda */
@@ -135,11 +141,12 @@ body{
         transition:all 500ms ease; /* Establecemos una transición a todas las propiedades */
     }
      
-    & ul li .icon-facebook {background:#3b5998;} /* Establecemos los colores de cada red social, aprovechando su class */
-    & ul li .icon-twitter {background: #0079a8;}
-    & ul li .icon-instagram {background: #383435;}
-    & ul li .icon-whatsapp {background: #00BFA5;}
-    & ul li .icon-mail {background: #C5221F;}
+    @each $red ,$color in $social {
+        & ul li .icon-#{$red}{
+            background-color: $color;
+        }
+    }
+    
     
     & img{
         width: 1rem;
@@ -153,9 +160,12 @@ body{
 
 
 }
-
+@mixin alto-ancho ($alto,$ancho){
+    height: $alto;
+    width: $ancho;
+}
  
 /* fin stilos del menu redes sociales*/
 .carouselPrincipal__item--img{
-    height: 500px;
+    @include alto-ancho(500px,auto);
 }

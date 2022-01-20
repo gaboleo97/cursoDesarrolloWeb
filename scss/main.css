@@ -143,7 +143,6 @@ body {
   /* Bajamos la barra 200px de arriba a abajo */
   z-index: 2000;
   /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
-  /* Establecemos los colores de cada red social, aprovechando su class */
 }
 
 .social ul {
@@ -169,23 +168,23 @@ body {
 }
 
 .social ul li .icon-facebook {
-  background: #3b5998;
+  background-color: #3b5998;
 }
 
 .social ul li .icon-twitter {
-  background: #0079a8;
+  background-color: #0079a8;
 }
 
 .social ul li .icon-instagram {
-  background: #383435;
+  background-color: #383435;
 }
 
 .social ul li .icon-whatsapp {
-  background: #00BFA5;
+  background-color: #00BFA5;
 }
 
 .social ul li .icon-mail {
-  background: #C5221F;
+  background-color: #C5221F;
 }
 
 .social img {
@@ -203,5 +202,6 @@ body {
 /* fin stilos del menu redes sociales*/
 .carouselPrincipal__item--img {
   height: 500px;
+  width: auto;
 }
 /*# sourceMappingURL=main.css.map */
