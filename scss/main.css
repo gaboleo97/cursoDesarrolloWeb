@@ -224,7 +224,7 @@ body {
 
 .social ul {
   list-style: none;
-  padding-left: 0.5rem;
+  padding-left: 0rem;
   overflow: hidden;
   background-color: #3F4B5B;
 }
@@ -281,5 +281,13 @@ body {
   max-height: 500px;
   height: auto;
   width: auto;
+}
+
+.search__title {
+  text-align: center;
+}
+
+.search__bar {
+  border-radius: 2rem;
 }
 /*# sourceMappingURL=main.css.map */
