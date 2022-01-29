@@ -10,7 +10,7 @@
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
      <!-- JavaScript Bundle with Popper -->
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-     <link rel="stylesheet" href="../css/style.css"> 
+     <link rel="stylesheet" href="../scss/main.css"> 
     <title>Propio Mercado - Multimedia</title>
 </head>
 <body>
@@ -19,12 +19,12 @@
           <img class="header__logo" src="../assets/logo.png"" style="height:200px;" alt="logo propio mercado">
         <!-- Fin Logo -->
         <!-- Menu Principal-->
-        <nav class="navbar navbar-expand-lg navbar-light header__nav collapse-lg">
-          <button class="navbar-toggler ml-auto" type="button" data-bs-toggle="collapse" data-bs-target="#opciones" aria-controls="navbarToggleropciones" aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar navbar-expand-lg navbar-light header__nav--mobile collapse-lg">
+          <button class="navbar-toggler ml-auto header__menu--mobile" type="button" data-bs-toggle="collapse" data-bs-target="#opciones" aria-controls="navbarToggleropciones" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
             <div class="container-fluid">
-              <div class="collapse navbar-collapse" id="navbarNav">
+              <div class="collapse navbar-collapse" id="opciones">
                 <ul class="navbar-nav mx-auto header__nav">
                   <li class="nav-item header__li">
                     <a aria-current="page" href="../index.html">Home</a>
@@ -48,51 +48,53 @@
           <!-- Fin Menu Principal-->
       </header>
     <main>
-        <div class="container">
-            <div class="">
+        <div class="container multimedia">
                 <div class="row justify-content-center multimedia">
-                    <h1 class="col-12 multimedia__tituloprincipal">Multimedia</h1>
-                    <div class="row justify-content-center"> 
-                        <div class="col-sm-6 col-lg-3">
-                            <img class="multimedia__img" src="../assets/12.jpeg" alt="">
-                                <p class="multimedia__titulo" >titulo 1</p>
-        
-                        </div>
-                        <div class="col-sm-6 col-lg-3">
-                            <img class="multimedia__img" src="../assets/13.jpeg" alt="">
-                                <p class="multimedia__titulo" >titulo 2</p>
-        
-                        </div>
-                        <div class="col-sm-6 col-lg-3">
-                            <img class="multimedia__img" src="../assets/14.jpeg" alt="">
-                                <p class="multimedia__titulo" >titulo 3</p>
-        
-                        </div>
-                        <div class="col-sm-6 col-lg-3">
-                            <img class="multimedia__img" src="../assets/17.jpeg" alt="">
-                                <p class="multimedia__titulo" >titulo 4</p>                     
-        
-                        </div> 
-                                       
+                    <h1 class="multimedia__titulo">Ven a Visitarnos</h1>
+                      <div class="col-sm-12 col-md-12">
+                          <img class="multimedia__img img-fluid" src="../assets/local1.png" alt="Entrada local">
+                      </div>
+                      <div class="col-sm-12 col-md-12">
+                          <img class="multimedia__img img-fluid" src="../assets/local2.png" alt="Frutas y verduras">
+                      </div>
+                      <div class="col-sm-12 col-md-12">
+                          <img class="multimedia__img img-fluid" src="../assets/local3.png" alt="Frutas y verduras">
+                      </div>
+                      <div class="col-sm-12 col-md-12">
+                        <img class="multimedia__img img-fluid" src="../assets/banner8.png" alt="Propoio Mercado">
                     </div>
-                    
                 </div>
-            </div>
-        </div>
+          </div>
     </main>
     <footer>
         <hr>
         <!-- Menu footer-->
-        <div class="footer__menu">      
-                <nav class="footer__nav">
-                  <ul class="footer__ul">
-                      <li class="footer__li"><a href="../index.html">Inicio</a></li>
-                      <li class="footer__li"><a href="./productos.html">Productos</a></li>
-                      <li class="footer__li"><a href="./nosotros.html">Nosotros</a></li>
-                      <li class="footer__li"><a href="#">Multimedia</a></li>
-                      <li class="footer__li"><a href="./contacto.html">Contactanos</a></li>
-                  </ul>
-              </nav>                 
+        <nav class="navbar navbar-expand-lg navbar-light footer__nav--mobile collapse-lg">
+          <button class="navbar-toggler ml-auto footer__menu--mobile" type="button" data-bs-toggle="collapse" data-bs-target="#opcionesFooter" aria-controls="navbarToggleropciones" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="opcionesFooter">
+              <ul class="navbar-nav mx-auto footer__nav mb-2 mb-lg-0">
+                <li class="nav-item footer__li">
+                  <a aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item footer__li">
+                  <a href="./views/productos.html">Productos</a>
+                </li>
+                <li class="nav-item footer__li">
+                  <a href="./views/nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item footer__li">
+                  <a href="./views/multimedia.html">Multimedia</a>
+                </li>
+                <li class="nav-item footer__li">
+                  <a href="./views/contacto.html">Contactanos</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>               
         <!-- Fin Menu footer-->
         </div>
       </footer>

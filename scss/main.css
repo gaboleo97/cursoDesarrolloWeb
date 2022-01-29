@@ -1,12 +1,53 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,300;1,500&display=swap");
+.contactanos__title {
+  text-align: center;
+}
+
+.contactanos__mapa {
+  border: 0;
+  width: 100%;
+}
+
+.contactanos__datos {
+  text-align: center;
+}
+
+.multimedia__titulo {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.multimedia__img {
+  max-width: 100%;
+  height: auto;
+  min-width: 13.5rem;
+  min-height: 10.2rem;
+}
+
+.nosotros__titulo {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.nosotros__parrafo {
+  margin-left: 1rem;
+  text-align: center;
+}
+
+.productos__titulo {
+  margin-top: 1rem;
+  text-align: center;
+}
+
 * {
   font-family: 'Roboto', sans-serif;
 }
 
 body {
-  background: #e4f70a;
-  background: -webkit-gradient(linear, left top, left bottom, from(#e4f70a), color-stop(35%, rgba(10, 117, 232, 0.892595)), to(red));
-  background: linear-gradient(180deg, #e4f70a 0%, rgba(10, 117, 232, 0.892595) 35%, red 100%);
+  background: #f7d210;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #f7d210), color-stop(60%, #0030ad), color-stop(90%, #d00c27));
+  background: linear-gradient(180deg, #f7d210 30%, #0030ad 60%, #d00c27 90%);
 }
 
 /* logo*/
@@ -23,6 +64,21 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #3F4B5B;
+  text-align: center;
+  margin-top: 2px;
+}
+
+.header__nav--mobile {
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -75,6 +131,11 @@ body {
   background-color: #ffffff;
 }
 
+.header__menu--mobile {
+  margin-right: 2rem;
+  margin-bottom: 2px;
+}
+
 /* fin logo*/
 /* estilos del menu*/
 /* fin stilos del menu*/
@@ -87,18 +148,29 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background: #3F4B5B;
+  text-align: start;
+  margin-top: 2px;
+}
+
+.footer__nav--mobile {
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #3F4B5B;
+  text-align: center;
 }
 
 .footer__ul {
@@ -130,6 +202,11 @@ body {
 
 .footer__ .footer .active {
   background-color: #ffffff;
+}
+
+.footer__menu--mobile {
+  margin-left: 2rem;
+  margin-bottom: 2px;
 }
 
 /* fin stilos del menu footer*/
@@ -201,7 +278,13 @@ body {
 
 /* fin stilos del menu redes sociales*/
 .carouselPrincipal__item--img {
-  height: 500px;
+  max-height: 500px;
+  height: auto;
   width: auto;
+}
+
+.carousel__producto--img {
+  max-width: 250px;
+  height: 250px;
 }
 /*# sourceMappingURL=main.css.map */

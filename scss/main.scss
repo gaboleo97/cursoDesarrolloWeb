@@ -1,10 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,300;1,500&display=swap");
+@import "./components/contacto.scss";
+@import "./components/multimedia.scss";
+@import "./components/nosotros.scss";
+@import "./components/productos.scss";
 *{
     font-family: 'Roboto', sans-serif;
 }
 body{
-    background: rgb(228,247,10);
-    background: linear-gradient(180deg, rgba(228,247,10,1) 0%, rgba(10,117,232,0.8925945378151261) 35%, rgba(255,0,0,1) 100%);
+    background: rgb(247,210,16);
+    background: linear-gradient(180deg, rgba(247,210,16,1) 30%, rgba(0,48,173,1) 60%, rgba(208,12,39,1) 90%);
 }
 /* logo*/
 .header__{
@@ -17,6 +21,14 @@ body{
     &nav{
         display: flex;
         justify-content: center;
+        align-items: center;
+        background: #3F4B5B;
+        text-align: center;
+        margin-top: 2px;
+    }
+    &nav--mobile{
+        justify-content: right;
+        display: flex;
         align-items: center;
         background: #3F4B5B;
         text-align: center;
@@ -54,7 +66,10 @@ body{
     &menuprincipal .active {
         background-color: #ffffff;
     }
-
+    &menu--mobile{
+        margin-right: 2rem;
+        margin-bottom: 2px;
+    }
 
 }
 /* fin logo*/
@@ -70,10 +85,18 @@ body{
     }
     &nav{
         display: flex;
-        flex-direction:row;
-        flex-wrap: nowrap;
-        align-items: flex-start;
         justify-content: start;
+        align-items: flex-start;
+        background: #3F4B5B;
+        text-align: start;
+        margin-top: 2px;
+    }
+    &nav--mobile{
+        justify-content: left;
+        display: flex;
+        align-items: center;
+        background: #3F4B5B;
+        text-align: center;
     }
     &ul  {
         display: flex;
@@ -101,6 +124,10 @@ body{
       
     .footer .active {
         background-color: #ffffff;
+    }
+    &menu--mobile{
+        margin-left: 2rem;
+        margin-bottom: 2px;
     }
 
 }
@@ -168,5 +195,11 @@ mail:#C5221F
  
 /* fin stilos del menu redes sociales*/
 .carouselPrincipal__item--img{
-    @include alto-ancho(500px,auto);
+    max-height: 500px;
+    @include alto-ancho(auto,auto);
+}
+
+.carousel__producto--img{
+    max-width: 250px;
+    height: 250px;
 }
