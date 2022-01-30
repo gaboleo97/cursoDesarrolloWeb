@@ -199,6 +199,7 @@ mail:#C5221F
     @include alto-ancho(auto,auto);
 }
 
+
 .search{
     &__title{
         text-align: center;
@@ -206,4 +207,11 @@ mail:#C5221F
     &__bar{
         border-radius: 2rem;
     }
+}
+
+@media screen and (min-width: 1024px) {
+    .carouselPrincipal__item--img{
+        max-height: 100%;
+    }
+    
 }

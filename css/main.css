@@ -1,2 +1,212 @@
-h1 {
-  color: red; }
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,300;1,500&display=swap");
+.contactanos__title {
+  text-align: center; }
+
+.contactanos__mapa {
+  border: 0;
+  width: 100%; }
+
+.contactanos__datos {
+  text-align: center; }
+
+.multimedia__titulo {
+  margin-top: 1rem;
+  text-align: center; }
+
+.multimedia__img {
+  max-width: 100%;
+  height: auto;
+  min-width: 13.5rem;
+  min-height: 10.2rem; }
+
+.nosotros {
+  align-items: center;
+  justify-content: center; }
+  .nosotros__titulo {
+    margin-top: 1rem;
+    text-align: center; }
+  .nosotros__parrafo {
+    margin-left: 1rem;
+    text-align: justify;
+    border-radius: 1rem;
+    border: 4px solid #FFF;
+    padding: 1rem; }
+  .nosotros__img {
+    border-radius: 1rem; }
+
+.productos__titulo {
+  margin-top: 1rem;
+  text-align: center; }
+
+* {
+  font-family: 'Roboto', sans-serif; }
+
+body {
+  background: #f7d210;
+  background: linear-gradient(180deg, #f7d210 30%, #0030ad 60%, #d00c27 90%); }
+
+/* logo*/
+.header__logo {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  margin-left: 4rem; }
+
+.header__nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #3F4B5B;
+  text-align: center;
+  margin-top: 2px; }
+
+.header__nav--mobile {
+  justify-content: right;
+  display: flex;
+  align-items: center;
+  background: #3F4B5B;
+  text-align: center; }
+
+.header__ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  list-style-type: none;
+  overflow: hidden;
+  justify-content: center;
+  background-color: #3F4B5B; }
+
+.header__li {
+  color: #FFF;
+  flex: 1 1;
+  margin-top: 20px; }
+
+.header__li > a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 18px;
+  text-decoration: none; }
+
+.header__li > a:hover:not(.active) {
+  background-color: #000; }
+
+.header__menuprincipal .active {
+  background-color: #ffffff; }
+
+.header__menu--mobile {
+  margin-right: 2rem;
+  margin-bottom: 2px; }
+
+/* fin logo*/
+/* estilos del menu*/
+/* fin stilos del menu*/
+/* estilos del menu footer*/
+.footer__menu {
+  background-color: #3F4B5B; }
+
+.footer__nav {
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+  background: #3F4B5B;
+  text-align: start;
+  margin-top: 2px; }
+
+.footer__nav--mobile {
+  justify-content: right;
+  display: flex;
+  align-items: right;
+  background: #3F4B5B;
+  text-align: center; }
+
+.footer__ul {
+  display: flex;
+  flex-wrap: nowrap;
+  list-style-type: none;
+  overflow: hidden;
+  background-color: #3F4B5B; }
+
+.footer__li {
+  float: left; }
+
+.footer__li > a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none; }
+
+.footer__li > a:hover:not(.active) {
+  background-color: #000; }
+
+.footer__ .footer .active {
+  background-color: #ffffff; }
+
+.footer__menu--mobile {
+  margin-right: 2rem;
+  margin-bottom: 2px; }
+
+/* fin stilos del menu footer*/
+/* estilos del menu redes sociales*/
+.social {
+  position: fixed;
+  /* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla*/
+  left: 0;
+  /* Establecemos la barra en la izquierda */
+  top: 200px;
+  /* Bajamos la barra 200px de arriba a abajo */
+  z-index: 2000;
+  /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */ }
+  .social ul {
+    list-style: none;
+    padding-left: 0rem;
+    overflow: hidden;
+    background-color: #3F4B5B; }
+  .social li {
+    float: left; }
+  .social ul li a {
+    display: inline-block;
+    color: #fff;
+    background: #000;
+    padding: 10px 15px;
+    text-decoration: none;
+    -webkit-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+    /* Establecemos una transición a todas las propiedades */ }
+  .social ul li .icon-facebook {
+    background-color: #3b5998; }
+  .social ul li .icon-twitter {
+    background-color: #0079a8; }
+  .social ul li .icon-instagram {
+    background-color: #383435; }
+  .social ul li .icon-whatsapp {
+    background-color: #00BFA5; }
+  .social ul li .icon-mail {
+    background-color: #C5221F; }
+  .social img {
+    width: 1rem;
+    height: 1rem; }
+  .social ul li a:hover {
+    background: rgba(0, 0, 0, 0.411);
+    /* Cambiamos el fondo cuando el usuario pase el mouse */
+    padding: 10px 30px;
+    /* Hacemos mas grande el espacio cuando el usuario pase el mouse */ }
+
+/* fin stilos del menu redes sociales*/
+.carouselPrincipal__item--img {
+  max-height: 500px;
+  height: auto;
+  width: auto; }
+
+.search__title {
+  text-align: center; }
+
+.search__bar {
+  border-radius: 2rem; }
+
+@media screen and (min-width: 1024px) {
+  .carouselPrincipal__item--img {
+    max-height: 100%; } }

@@ -14,6 +14,13 @@
 
 .nosotros__parrafo {
   margin-left: 1rem;
-  text-align: center;
+  text-align: justify;
+  border-radius: 1rem;
+  border: 4px solid #FFF;
+  padding: 1rem;
+}
+
+.nosotros__img {
+  border-radius: 1rem;
 }
 /*# sourceMappingURL=nosotros.css.map */
