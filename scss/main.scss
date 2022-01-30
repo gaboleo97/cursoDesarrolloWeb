@@ -14,6 +14,7 @@ body{
 .header__{
 
     &logo{
+        height: 200px;
         margin-top: 2rem;
         margin-bottom: 1rem;
         margin-left: 4rem;
@@ -212,6 +213,19 @@ mail:#C5221F
 @media screen and (min-width: 1024px) {
     .carouselPrincipal__item--img{
         max-height: 100%;
+    }
+    
+}
+@media screen and (max-width:425px) {
+    .header{
+
+        &__logo{
+            height: 100%;
+            width: 100%;
+            margin-top: 0rem;
+            margin-bottom: 0rem;
+            margin-left:0rem;
+        }
     }
     
 }
