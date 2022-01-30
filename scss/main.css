@@ -25,6 +25,15 @@
   min-height: 10.2rem;
 }
 
+.nosotros {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .nosotros__titulo {
   margin-top: 1rem;
   text-align: center;
@@ -160,15 +169,15 @@ body {
 }
 
 .footer__nav--mobile {
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: right;
+      -ms-flex-align: right;
+          align-items: right;
   background: #3F4B5B;
   text-align: center;
 }
@@ -205,7 +214,7 @@ body {
 }
 
 .footer__menu--mobile {
-  margin-left: 2rem;
+  margin-right: 2rem;
   margin-bottom: 2px;
 }
 
